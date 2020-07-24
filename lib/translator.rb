@@ -13,7 +13,9 @@ end
 
 def get_english_meaning(yaml_file, emoticon)
   library = load_library(yaml_file)
-  
+  load_library.each do |japanese, english|
+    if emoticon == japanese
+      return = english
 end
 
 def get_japanese_meaning()
