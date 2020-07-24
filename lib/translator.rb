@@ -11,6 +11,14 @@ def load_library(yaml_file)
   final_result
 end
 
+def get_english_meaning()
+  library = YAML.load_library(yaml_file)
   
+end
+
+def get_japanese_meaning()
+  library = YAML.load_library(yaml_file)
+end
+
 
   
