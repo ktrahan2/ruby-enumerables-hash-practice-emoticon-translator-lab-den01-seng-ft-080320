@@ -17,6 +17,7 @@ def get_english_meaning(yaml_file, emoticon)
   if result == nil
     return "Sorry, that emoticon was not found"
   end
+  result
 end
 
 def get_japanese_meaning(yaml_file, emoticon)
