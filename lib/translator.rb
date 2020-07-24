@@ -13,6 +13,9 @@ end
 
 def get_english_meaning(yaml_file, emoticon)
   library = load_library(yaml_file)
+  result = final_hash[emoticon]
+  if result == nil
+    return "Sorry, "
 end
 
 def get_japanese_meaning(yaml_file, emoticon)
