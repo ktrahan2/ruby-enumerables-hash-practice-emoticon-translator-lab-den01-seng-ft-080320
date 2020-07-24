@@ -13,7 +13,7 @@ end
 
 def get_english_meaning(yaml_file, emoticon)
   library = load_library(yaml_file)
-  result = library[final_hash][inner_hash]["english"]
+  result = library[final_hash][emoticon]
   if result == nil
     return "Sorry, that emoticon was not found"
   end
