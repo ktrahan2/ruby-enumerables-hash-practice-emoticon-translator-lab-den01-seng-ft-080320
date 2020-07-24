@@ -16,6 +16,7 @@ def get_english_meaning(yaml_file, emoticon)
   final_hash.each do |key, value|
     puts key
     puts value[:japanese]
+    puts emoticon
     binding pry
     if result == nil
       result = "Sorry, that emoticon was not found"
