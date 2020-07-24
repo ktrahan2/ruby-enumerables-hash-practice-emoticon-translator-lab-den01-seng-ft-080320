@@ -2,7 +2,7 @@ require 'yaml'
 require 'pry'
 
 def load_library(yaml_file)
-  emoticons_hash = {"get_meaning" => {}, "get_name" => {}}
+  emoticon = {"get_meaning" => {}, "get_name" => {}}
   emo_library = YAML.load_file(yaml_file)
   emo_library.each do |meaning, value|
     emoticons_hash["get_meaning"][value[1]] = meaning
