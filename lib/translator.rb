@@ -21,6 +21,7 @@ def get_english_meaning(yaml_file, emoticon)
     if result == japanese
       return english
     end
+  end
   result
 end
 
