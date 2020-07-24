@@ -8,7 +8,7 @@ def load_library(yaml_file)
     final_hash[meaning] = {"english": translation[0], "japanese": translation[1]}
   binding pry
   end
-  final_result
+  final_hash
 end
 
 def get_english_meaning()
