@@ -11,7 +11,7 @@ def load_library(yaml_file)
   final_hash
 end
 
-def get_english_meaning()
+def get_english_meaning(yaml_file, emoticon)
   library = YAML.load_library(yaml_file)
   
 end
