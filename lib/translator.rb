@@ -1,17 +1,13 @@
 require 'yaml'
 require 'pry'
 
-def load_library(emoticon_file)
-  emoticons = YAML.load_file('./lib/emoticons.yml')
-
-  emoticon_lib = {'get_meaning'  => {},
-                  'get_emoticon' => {} }
-
-  emoticons.each do |meaning, value|  # meaning= "surprised"   # value= [":o", "o_O"]  <-(e,j)
-    english = value[0]
-    japanese = value[1]
-    emoticon_lib['get_meaning'][japanese] = meaning
-    emoticon_lib['get_emoticon'][english] = japanese
+def load_library(yaml_file)
+  emoticon_hash = {}
+  emo_library = YAML.load_file(yaml_file)
+  emo_library.each do |meaning, value|
+    emoticons_hash["get_meaning"][value[1]] = meaning
+    emoticons_hash["get_name"][value[0]] = value[1]
   end
-  emoticon_lib
+  binding pry
+  emoticons_hash
 end
