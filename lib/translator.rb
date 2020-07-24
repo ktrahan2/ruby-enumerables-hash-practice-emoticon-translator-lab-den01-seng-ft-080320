@@ -6,7 +6,7 @@ def load_library(yaml_file)
   final_hash = {}
   data.each_pair do |meaning, translation|
     final_hash[meaning] = {"english": translation[0], "japanese": translation[1]}
-  binding pry
+ #binding pry
   end
   final_hash
 end
