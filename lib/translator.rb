@@ -15,7 +15,7 @@ def get_english_meaning(yaml_file, emoticon)
   final_hash = load_library(yaml_file)
   final_hash.each do |japanese, english|
     puts final_hash
-    puts japanese
+    puts japanese[:japanese]
     puts english
     binding pry
     if result == nil
