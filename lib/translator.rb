@@ -16,10 +16,10 @@ def get_english_meaning(yaml_file, emoticon)
   result = nil
   final_hash.each do |japanese, english|
     if result == nil
-      return "Sorry, that emoticon was not found"
+      result = "Sorry, that emoticon was not found"
     end
     if result == japanese
-      return english
+      result = english
     end
   end
   result
