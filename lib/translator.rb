@@ -10,4 +10,6 @@ def load_library(yaml_file)
     binding pry
     emoticons_hash["get_meaning"][japanese] = meaning
     emoticons_hash["get_name"][english] = japanese
+  end
+  emoticons_hash
 end
