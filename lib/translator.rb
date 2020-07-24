@@ -12,7 +12,7 @@ def load_library(yaml_file)
 end
 
 def get_english_meaning(yaml_file, emoticon)
-  library = YAML.load_library(yaml_file)
+  library = load_library(yaml_file)
   
 end
 
