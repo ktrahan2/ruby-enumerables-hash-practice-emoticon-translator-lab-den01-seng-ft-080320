@@ -14,6 +14,7 @@ end
 def get_english_meaning(yaml_file, emoticon)
   final_hash = load_library(yaml_file)
   final_hash.each do |japanese, english|
+    binding pry
     if result == nil
       result = "Sorry, that emoticon was not found"
     end
